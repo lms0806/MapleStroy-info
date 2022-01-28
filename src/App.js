@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Potion" element={<Potion />} />
+        <Route exact path="/MapleStroy-info" element={<Home />} />
+        <Route exact path="/MapleStroy-info/Potion" element={<Potion />} />
       </Routes>
     </div>
   );

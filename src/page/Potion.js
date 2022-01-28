@@ -6,7 +6,7 @@ const Potion = () => {
     <div>
       <Card style={{ width: "22rem" }}>
         <Card.Body>
-          <Card.Title>인피 무한 유지</Card.Title>
+          <Card.Title>인피 무한 유지(확실x)</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             모법만 해당됨
           </Card.Subtitle>
