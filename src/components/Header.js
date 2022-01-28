@@ -13,7 +13,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Link to="/Potion" className="nav-link">
-              익성비
+              정리
             </Link>
           </Nav>
         </Navbar.Collapse>
