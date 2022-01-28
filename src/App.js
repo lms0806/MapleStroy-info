@@ -1,0 +1,20 @@
+import React from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./page/Home";
+import Header from "./components/Header";
+import Potion from "./page/Potion";
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Potion" element={<Potion />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
