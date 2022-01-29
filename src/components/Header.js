@@ -15,6 +15,9 @@ const Header = () => {
             <Link to="/MapleStroy-info/Potion" className="nav-link">
               비약
             </Link>
+            <Link to="/MapleStroy-info/Hunt" className="nav-link">
+              사냥터
+            </Link>
             <Link to="/MapleStroy-info/Info" className="nav-link">
               정리
             </Link>
