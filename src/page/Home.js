@@ -1,10 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import character from "../img/character.png";
+import dontknow from "../img/몰루2.gif";
+import solru from "../img/솔루.gif";
+import solru2 from "../img/솔루2.gif";
+import solru3 from "../img/솔루3.gif";
+
 const Home = () => {
   return (
     <div>
-      <h1>안녕하세요 메이플스토리 잡정보 사이트입니다.</h1>
+      <div className="Card1">
+        <img className="Image" alt="character" src={solru} />
+        <img className="Image" alt="character" src={solru2} />
+        <img className="Image" alt="character" src={solru3} />
+        <img className="Image" alt="character" src={dontknow} />
+      </div>
       <br />
       <h2>제작자</h2>
       <div className="Card1">
