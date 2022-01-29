@@ -3,7 +3,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./page/Home";
 import Header from "./components/Header";
-import Potion from "./page/Potion";
+import Info from "./page/Info";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/MapleStroy-info" element={<Home />} />
-        <Route exact path="/MapleStroy-info/Potion" element={<Potion />} />
+        <Route exact path="/MapleStroy-info/Info" element={<Info />} />
       </Routes>
     </div>
   );
