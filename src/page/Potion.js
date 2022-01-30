@@ -69,7 +69,7 @@ const Potion = () => {
       <Card>
         <Card.Img variant="top" />
         <Card.Body>
-          <Card.Title>익성비3</Card.Title>
+          <Card.Title>성장의 비약</Card.Title>
           <Table striped bordered hover>
             <thead>
               <tr>
