@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import character from "../img/character.png";
 import dontknow from "../img/몰루2.gif";
 import solru from "../img/솔루.gif";
