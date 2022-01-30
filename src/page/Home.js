@@ -1,19 +1,13 @@
 import React from "react";
 import character from "../img/character.png";
 import character2 from "../img/character2.png";
-import dontknow from "../img/몰루2.gif";
-import solru from "../img/솔루.gif";
-import solru2 from "../img/솔루2.gif";
-import solru3 from "../img/솔루3.gif";
+import morlu from "../img/몰루2.gif";
 
 const Home = () => {
   return (
     <div>
       <div className="Card1">
-        <img className="Image" alt="character" src={solru} />
-        <img className="Image" alt="character" src={solru2} />
-        <img className="Image" alt="character" src={solru3} />
-        <img className="Image" alt="character" src={dontknow} />
+        <img className="Image" alt="character" src={morlu} />
       </div>
       <br />
       <h2>제작자</h2>
@@ -31,7 +25,7 @@ const Home = () => {
         />
         <img
           className="Image"
-          alt="character"
+          alt="character2"
           src={character2}
           onClick={() =>
             window.open(
