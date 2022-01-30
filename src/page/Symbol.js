@@ -67,7 +67,7 @@ const Symbol = () => {
           <Card>
             <Card.Img variant="top" />
             <Card.Body>
-              <Card.Title>아케인 심볼</Card.Title>
+              <Card.Title>에센틱 심볼</Card.Title>
               <Table striped bordered hover>
                 <thead>
                   <tr>
