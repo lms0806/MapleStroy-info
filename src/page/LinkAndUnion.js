@@ -4,29 +4,6 @@ import Link from "./Link";
 import Unions from "./Unions";
 
 const LinkAndUnion = () => {
-  const level = [
-    500,
-    1000,
-    1500,
-    2000,
-    2500,
-    3000,
-    3500,
-    4000,
-    4500,
-    5000,
-    5500,
-    6000,
-    6500,
-    7000,
-    7500,
-    "8000(메린이 탈출)",
-    8500,
-    9000,
-    9500,
-    10000,
-  ];
-
   const coin = [
     "(최초 등급)",
     120,
@@ -77,7 +54,7 @@ const LinkAndUnion = () => {
                 <tbody>
                   {Array.from({ length: 20 }).map((_, index) => (
                     <tr>
-                      <td key={index}>{level[index]}</td>
+                      <td key={index}>{500 + index * 500}</td>
                       <td key={index}>{coin[index]}</td>
                       <td key={index}>{num[index]}</td>
                     </tr>
