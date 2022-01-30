@@ -1,13 +1,13 @@
 import React from "react";
 import character from "../img/character.png";
 import character2 from "../img/character2.png";
-import morlu from "../img/몰루2.gif";
+import soul from "../img/소울 이클립스.gif";
 
 const Home = () => {
   return (
     <div>
       <div className="Card1">
-        <img className="Image" alt="character" src={morlu} />
+        <img className="Image" alt="character" src={soul} />
       </div>
       <br />
       <h2>제작자</h2>
