@@ -1,5 +1,6 @@
 import React from "react";
 import character from "../img/character.png";
+import character2 from "../img/character2.png";
 import dontknow from "../img/몰루2.gif";
 import solru from "../img/솔루.gif";
 import solru2 from "../img/솔루2.gif";
@@ -24,6 +25,17 @@ const Home = () => {
           onClick={() =>
             window.open(
               "https://maple.gg/u/%EC%82%AC%EB%9E%91%EB%B2%95%EC%82%AC",
+              "_blank"
+            )
+          }
+        />
+        <img
+          className="Image"
+          alt="character"
+          src={character2}
+          onClick={() =>
+            window.open(
+              "https://maple.gg/u/%EC%82%AC%EB%9E%91%EB%B0%94%ED%8D%BC",
               "_blank"
             )
           }
