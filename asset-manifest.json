@@ -1,19 +1,16 @@
 {
   "files": {
     "main.css": "/MapleStroy-info/static/css/main.647078a0.css",
-    "main.js": "/MapleStroy-info/static/js/main.9aa1d9c5.js",
+    "main.js": "/MapleStroy-info/static/js/main.cdd679cb.js",
     "static/media/몰루2.gif": "/MapleStroy-info/static/media/몰루2.3e0ac69d15562d6ece88.gif",
-    "static/media/솔루2.gif": "/MapleStroy-info/static/media/솔루2.ba3f1db272fb7cb2d5a8.gif",
-    "static/media/솔루3.gif": "/MapleStroy-info/static/media/솔루3.e8eda66fbea31a9b369c.gif",
     "static/media/character.png": "/MapleStroy-info/static/media/character.8793767fe12eb977753e.png",
-    "static/media/솔루.gif": "/MapleStroy-info/static/media/솔루.534e0978c74c92bf25ce.gif",
     "static/media/character2.png": "/MapleStroy-info/static/media/character2.99eb69cf2411ba19272a.png",
     "index.html": "/MapleStroy-info/index.html",
     "main.647078a0.css.map": "/MapleStroy-info/static/css/main.647078a0.css.map",
-    "main.9aa1d9c5.js.map": "/MapleStroy-info/static/js/main.9aa1d9c5.js.map"
+    "main.cdd679cb.js.map": "/MapleStroy-info/static/js/main.cdd679cb.js.map"
   },
   "entrypoints": [
     "static/css/main.647078a0.css",
-    "static/js/main.9aa1d9c5.js"
+    "static/js/main.cdd679cb.js"
   ]
 }
