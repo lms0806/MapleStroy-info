@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Info from "./page/Info";
 import Potion from "./page/Potion";
 import Hunt from "./page/Hunt";
+import LinkAndUnion from "./page/LinkAndUnion";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
         <Route exact path="/MapleStroy-info/Info" element={<Info />} />
         <Route exact path="/MapleStroy-info/Potion" element={<Potion />} />
         <Route exact path="/MapleStroy-info/Hunt" element={<Hunt />} />
+        <Route
+          exact
+          path="/MapleStroy-info/LinkAndUnion"
+          element={<LinkAndUnion />}
+        />
       </Routes>
     </div>
   );
