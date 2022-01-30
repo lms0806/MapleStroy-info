@@ -76,9 +76,10 @@ const Potion = () => {
                 <th>레벨</th>
                 <th>극성비</th>
                 <th>태성비</th>
-                <th>익성비3</th>
-                <th>익성비2</th>
-                <th>익성비1</th>
+                <th>209 비약</th>
+                <th>219 비약</th>
+                <th>229 비약</th>
+                <th>익성비</th>
               </tr>
             </thead>
             <tbody>
