@@ -7,6 +7,7 @@ import Info from "./page/Info";
 import Potion from "./page/Potion";
 import Hunt from "./page/Hunt";
 import LinkAndUnion from "./page/LinkAndUnion";
+import Symbol from "./page/Symbol";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           path="/MapleStroy-info/LinkAndUnion"
           element={<LinkAndUnion />}
         />
+        <Route exact path="/MapleStroy-info/Symbol" element={<Symbol />} />
       </Routes>
     </div>
   );

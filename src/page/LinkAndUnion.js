@@ -65,7 +65,7 @@ const LinkAndUnion = () => {
           <Card>
             <Card.Img variant="top" />
             <Card.Body>
-              <Card.Title>유니온</Card.Title>
+              <Card.Title>유니온 레벨</Card.Title>
               <Table striped bordered hover responsive="md">
                 <thead>
                   <tr>

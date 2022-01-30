@@ -21,6 +21,9 @@ const Header = () => {
             <Link to="/MapleStroy-info/LinkAndUnion" className="nav-link">
               링크 & 유니온
             </Link>
+            <Link to="/MapleStroy-info/Symbol" className="nav-link">
+              심볼
+            </Link>
             <Link to="/MapleStroy-info/Info" className="nav-link">
               정리
             </Link>
