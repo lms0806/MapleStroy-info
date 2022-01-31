@@ -80,8 +80,6 @@ const Info = () => {
         </Card.Body>
       </Card>
       <br />
-
-      <br />
       <Card style={{ width: "20rem" }}>
         <Card.Body>
           <Card.Title>리메이크 일자</Card.Title>
