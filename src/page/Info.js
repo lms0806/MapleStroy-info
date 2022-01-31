@@ -22,6 +22,12 @@ const Info = () => {
   const remakejob = ["모험가"];
   const remakeday = ["2022-01-27"];
 
+  const fulldealjob = ["아크메이지(불, 독)", "바이퍼"];
+  const fulldealexplain = [
+    "포이즌 리전 -> 플레임 헤이즈 -> 미스트 이럽션 -> 플레임헤이즈 -> 포이즌 노바 -> 도트 퍼니셔 -> 포이즌 체인 -> 미스트 이럽션 -> 퓨리 오브 이프리트 -> 메기도 플레임 -> 메테오",
+    "서펜트 스크류 -> 전함 노틸러스 -> 라이트닝 폼 -> 3번 발사 -> 퓨리어스 차지 6번 -> 하울링 피스트",
+  ];
+
   return (
     <div>
       <Card style={{ width: "30rem" }}>
@@ -102,6 +108,30 @@ const Info = () => {
       <br />
       <Card style={{ width: "22rem" }}>
         <Card.Body>
+          <Card.Title>극딜 루틴</Card.Title>
+          <Card.Text>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>직업</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Array.from({ length: fulldealjob.length }).map((_, index) => (
+                  <tr>
+                    <td key={index}>{fulldealjob[index]}</td>
+                    <td key={index}>{fulldealexplain[index]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <br />
+      <Card style={{ width: "22rem" }}>
+        <Card.Body>
           <Card.Title>인피 무한 유지(확실x)</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             모법만 해당됨
@@ -121,6 +151,7 @@ const Info = () => {
           </Card.Text>
         </Card.Body>
       </Card>
+      <br />
     </div>
   );
 };
