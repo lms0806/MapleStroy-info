@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <Navbar bg="dark" expand="lg" variant="dark">
         <Link to="/MapleStroy-info" className="navbar-brand">
-          메정알
+          메잘알
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

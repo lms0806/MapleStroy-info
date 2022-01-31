@@ -62,6 +62,37 @@ const Link = () => {
     "받는 데미지 3/6/9/12/15% 감소, 공격 시 대상의 방어율 2/4/6/8/10% 무시 (스토리퀘 깨야함)",
     "크리티컬 데미지 2/4% 증가",
   ];
+
+  const linkimg = [
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/invincible_belief.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/empirical_knowledge.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/adventurer_curious.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/thief_cunning.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/pirate_blessing.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/cygnus_blessing.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/knights_watch.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/spirit_of_freedom.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/hybrid_logic.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/fury_unleashed.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/wild_rage.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/combo_kill_advantage.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/rune_persistence.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/light_wash.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/eleven_blessing.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/phantom_instinct.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/elementalism.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/iron_will.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/kain.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/intensive_insult.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/terms_and_conditions.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/nobless.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/flow_of_battle.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/ecstasy.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/lara.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/bravado.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/rhinne_blessing.png",
+    "https://kr-cdn.maple.gg/images/maplestory/skills/links/judgement.png",
+  ];
   return (
     <div>
       <Card>
@@ -78,7 +109,10 @@ const Link = () => {
             <tbody>
               {Array.from({ length: 28 }).map((_, index) => (
                 <tr>
-                  <td key={index}>{jobs[index]}</td>
+                  <td key={index}>
+                    <img className="Image" src={linkimg[index]} />
+                    {jobs[index]}
+                  </td>
                   <td key={index}>
                     <div
                       dangerouslySetInnerHTML={{ __html: link[index] }}

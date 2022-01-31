@@ -6,9 +6,8 @@ import soul from "../img/소울 이클립스.gif";
 const Home = () => {
   return (
     <div>
-      <div className="Card1">
-        <img className="Image" alt="character" src={soul} />
-      </div>
+      <img className="Image" alt="character" src={soul} />
+      <br />
       <br />
       <h2>제작자</h2>
       <div className="Card1">
