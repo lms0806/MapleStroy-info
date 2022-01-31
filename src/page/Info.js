@@ -19,6 +19,9 @@ const Info = () => {
     "사용 시 자신을 포함한 주변 캐릭터의 이동속도가 빨라진다. 최대 6명까지 적용된다.",
   ];
 
+  const remakejob = ["모험가"];
+  const remakeday = ["2022-01-27"];
+
   return (
     <div>
       <Card style={{ width: "22rem" }}>
@@ -83,6 +86,29 @@ const Info = () => {
                   <tr>
                     <td key={index}>{flagname[index]}</td>
                     <td key={index}>{flagexplain[index]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={{ width: "20rem" }}>
+        <Card.Body>
+          <Card.Title>리메이크 일자</Card.Title>
+          <Card.Text>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>이름</th>
+                  <th>날짜</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Array.from({ length: 1 }).map((_, index) => (
+                  <tr>
+                    <td key={index}>{remakejob[index]}</td>
+                    <td key={index}>{remakeday[index]}</td>
                   </tr>
                 ))}
               </tbody>
