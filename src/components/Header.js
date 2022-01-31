@@ -30,6 +30,9 @@ const Header = () => {
             <Link to="/MapleStroy-info/Info" className="nav-link">
               정리
             </Link>
+            <Link to="/MapleStroy-info/Video" className="nav-link">
+              추천 영상
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

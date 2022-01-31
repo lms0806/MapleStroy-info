@@ -2,7 +2,6 @@ import React from "react";
 import { Card, Table } from "react-bootstrap";
 
 const Potion = () => {
-  const level = [200];
   const limit = [
     47.774, 47.301, 46.833, 46.369, 45.91, 45.455, 45.005, 44.56, 44.118,
     43.682, 21.625, 21.41, 21.198, 20.989, 20.781, 20.575, 20.371, 20.17, 19.97,
@@ -85,7 +84,7 @@ const Potion = () => {
             <tbody>
               {Array.from({ length: 100 }).map((_, index) => (
                 <tr>
-                  <td key={index}>{level[0] + index}</td>
+                  <td key={index}>{200 + index}</td>
                   <td key={index}>{index < 50 ? 100 : limit[index - 50]}%</td>
                   <td key={index}>{index < 40 ? 100 : Typhoon[index - 40]}%</td>
                   <td key={index}>

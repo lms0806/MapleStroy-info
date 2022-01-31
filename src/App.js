@@ -9,6 +9,7 @@ import Hunt from "./page/Hunt";
 import LinkAndUnion from "./page/LinkAndUnion";
 import Symbol from "./page/Symbol";
 import Boss from "./page/Boss";
+import Video from "./page/Video";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/MapleStroy-info/Potion" element={<Potion />} />
         <Route exact path="/MapleStroy-info/Hunt" element={<Hunt />} />
         <Route exact path="/MapleStroy-info/Boss" element={<Boss />} />
+        <Route exact path="/MapleStroy-info/Video" element={<Video />} />
         <Route
           exact
           path="/MapleStroy-info/LinkAndUnion"
