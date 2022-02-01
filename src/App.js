@@ -10,6 +10,7 @@ import LinkAndUnion from "./page/LinkAndUnion";
 import Symbol from "./page/Symbol";
 import Boss from "./page/Boss";
 import Video from "./page/Video";
+import Jobs from "./page/Jobs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/MapleStroy-info/Hunt" element={<Hunt />} />
         <Route exact path="/MapleStroy-info/Boss" element={<Boss />} />
         <Route exact path="/MapleStroy-info/Video" element={<Video />} />
+        <Route exact path="/MapleStroy-info/Jobs" element={<Jobs />} />
         <Route
           exact
           path="/MapleStroy-info/LinkAndUnion"
