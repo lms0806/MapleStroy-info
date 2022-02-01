@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Tab, Table, Tabs } from "react-bootstrap";
 
 const Jobs = () => {
-  const jobs = ["아크메이지(썬, 콜)1", "아크메이지(불, 독)", "바이퍼"];
+  const jobs = ["아크메이지(썬, 콜)", "아크메이지(불, 독)", "바이퍼"];
   const fulldealexplain = [
     "",
     "포이즌 리전 -> 플레임 헤이즈 -> 미스트 이럽션 -> 플레임헤이즈 -> 포이즌 노바 -> 도트 퍼니셔 -> 포이즌 체인 -> 미스트 이럽션 -> 퓨리 오브 이프리트 -> 메기도 플레임 -> 메테오",
