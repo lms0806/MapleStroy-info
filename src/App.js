@@ -13,6 +13,7 @@ import Video from "./page/Video";
 import Jobs from "./page/Jobs";
 import Weapon from "./page/Weapon";
 import Timer from "./page/Timer";
+import Murng from "./page/Murng";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/MapleStroy-info/Jobs" element={<Jobs />} />
         <Route exact path="/MapleStroy-info/Weapon" element={<Weapon />} />
         <Route exact path="/MapleStroy-info/Timer" element={<Timer />} />
+        <Route exact path="/MapleStroy-info/Murng" element={<Murng />} />
         <Route
           exact
           path="/MapleStroy-info/LinkAndUnion"

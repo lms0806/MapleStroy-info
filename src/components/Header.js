@@ -33,6 +33,9 @@ const Header = () => {
             <Link to="/MapleStroy-info/Weapon" className="nav-link">
               무기
             </Link>
+            <Link to="/MapleStroy-info/Murng" className="nav-link">
+              무릉
+            </Link>
             <Link to="/MapleStroy-info/Info" className="nav-link">
               정리
             </Link>
