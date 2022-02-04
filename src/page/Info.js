@@ -124,8 +124,7 @@ const Info = () => {
         <Card.Body>
           <Card.Title>불편한 점</Card.Title>
           <Card.Text>
-            1. 엘몬을 여러마리 잡았을 경우 마일리지 1개만 습득하고 사용 후
-            나머지 마일리지가 안먹어지는 오류 (습득 권한이 사라졌다고 뜸)
+            1. 룬 쿨타임 중일때 서든미션으로 룬관련 미션이 나옴
             <br />
           </Card.Text>
         </Card.Body>
