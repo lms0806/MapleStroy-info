@@ -42,19 +42,37 @@ const Symbol = () => {
                       <td key={index}>{30 + index * 10}</td>
                       <td key={index}>{300 + index * 100}</td>
                       <td key={index}>{144 + index * 48}</td>
-                      <td key={index}>{6300 + index * 2100}</td>
+                      <td key={index}>
+                        {(6300 + index * 2100).toLocaleString("ko-KR")}
+                      </td>
                       <td key={index}>{levelsize[index]}</td>
                       <td key={index}>
-                        {index < 1 ? 0 : 11030000 + (index - 1) * 3960000}
+                        {index < 1
+                          ? 0
+                          : (11030000 + (index - 1) * 3960000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
                       <td key={index}>
-                        {index < 1 ? 0 : 15460000 + (index - 1) * 4620000}
+                        {index < 1
+                          ? 0
+                          : (15460000 + (index - 1) * 4620000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
                       <td key={index}>
-                        {index < 1 ? 0 : 19890000 + (index - 1) * 5280000}
+                        {index < 1
+                          ? 0
+                          : (19890000 + (index - 1) * 5280000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
                       <td key={index}>
-                        {index < 1 ? 0 : 23076000 + (index - 1) * 5940000}
+                        {index < 1
+                          ? 0
+                          : (23076000 + (index - 1) * 5940000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
                     </tr>
                   ))}
@@ -89,15 +107,25 @@ const Symbol = () => {
                       <td key={index}>{10 + index * 10}</td>
                       <td key={index}>{500 + index * 200}</td>
                       <td key={index}>{240 + index * 96}</td>
-                      <td key={index}>{10500 + index * 4200}</td>
+                      <td key={index}>
+                        {(10500 + index * 4200).toLocaleString("ko-KR")}
+                      </td>
                       <td key={index}>{levelsize2[index]}</td>
                       <td key={index}>
-                        {index < 1 ? 0 : 185400000 + (index - 1) * 88500000}
+                        {index < 1
+                          ? 0
+                          : (185400000 + (index - 1) * 88500000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
                       <td key={index}>
-                        {index < 1 ? 0 : 203900000 + (index - 1) * 97300000}
+                        {index < 1
+                          ? 0
+                          : (203900000 + (index - 1) * 97300000).toLocaleString(
+                              "ko-KR"
+                            )}
                       </td>
-                      <td key={index}>{"?????????"}</td>
+                      <td>{"?????????"}</td>
                     </tr>
                   ))}
                 </tbody>
