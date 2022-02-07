@@ -68,7 +68,7 @@ const Skills = () => {
         <Tab eventKey="useskill" title="쓸만한 스킬">
           <Card style={{ width: "30rem" }}>
             <Card.Body>
-              <Card.Title>콤보킬</Card.Title>
+              <Card.Title>쓸만한 스킬들 효율표</Card.Title>
               <Card.Text>
                 <Table striped bordered hover>
                   <thead>
