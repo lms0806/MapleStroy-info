@@ -33,6 +33,7 @@ const Jobs = () => {
     "생존기 없음",
     "아쉬운 극딜기",
   ];
+
   return (
     <div>
       <Tabs
