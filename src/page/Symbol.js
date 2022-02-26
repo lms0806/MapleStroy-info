@@ -97,7 +97,7 @@ const Symbol = () => {
                     <th>필요 성장치</th>
                     <th>세르니움</th>
                     <th>아르크스</th>
-                    <th>카로테</th>
+                    <th>오디움</th>
                   </tr>
                 </thead>
                 <tbody>
