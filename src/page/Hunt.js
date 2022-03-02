@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Tab, Table, Tabs } from "react-bootstrap";
-import Timer from "./Timer";
 
 const Hunt = () => {
   const combo = ["50 ~ 300", "350 ~ 700", "750 ~ 1950", "2000 ~"];
@@ -58,6 +57,44 @@ const Hunt = () => {
     "180~190 황혼의 페리온 : 버려진 발굴지역",
     "190~200 헤이븐 : 상하차or기계무덤1~4",
   ];
+
+  const leveldifference = [
+    "40이상",
+    "39 ~ 21",
+    "20 ~ 19",
+    "18 ~ 17",
+    "16 ~ 15",
+    "14 ~ 13",
+    "12 ~ 11",
+    "10",
+    "9 ~ 5",
+    "4 ~ 2",
+    "1 ~ -1",
+    "-2 ~ -4",
+    "-5 ~ -9",
+    "-10 ~ -20",
+    " -21 ~ -35",
+    "-36 ~ -39",
+  ];
+  const leveldifferencepercet = [
+    70,
+    "71, ~ 89",
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    105,
+    110,
+    120,
+    110,
+    105,
+    "100 ~ 90",
+    "70 ~ 14",
+    10,
+  ];
+
   return (
     <div>
       <Tabs
@@ -169,12 +206,29 @@ const Hunt = () => {
             </Card.Body>
           </Card>
         </Tab>
-        <Tab eventKey="Timer" title="재확 타이머">
+        <Tab eventKey="leveldifference" title="레벨 차이">
           <Card style={{ width: "25rem" }}>
             <Card.Body>
-              <Card.Title>타이머</Card.Title>
+              <Card.Title>레벨 차이별 경험치 획득량</Card.Title>
               <Card.Text>
-                <Timer />
+                <Table striped bordered hover>
+                  <thead>
+                    <tr>
+                      <th>캐릭 레벨 - 몬스터 레벨</th>
+                      <th>경험치 획득량</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Array.from({ length: leveldifference.length }).map(
+                      (_, index) => (
+                        <tr>
+                          <td key={index}>{leveldifference[index]} </td>
+                          <td key={index}>{leveldifferencepercet[index]}%</td>
+                        </tr>
+                      )
+                    )}
+                  </tbody>
+                </Table>
               </Card.Text>
             </Card.Body>
           </Card>
