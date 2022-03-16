@@ -19,8 +19,8 @@ const Info = () => {
     "사용 시 자신을 포함한 주변 캐릭터의 이동속도가 빨라진다. 최대 6명까지 적용된다.",
   ];
 
-  const remakejob = ["모험가"];
-  const remakeday = ["2022-01-27"];
+  const remakejob = ["모험가", "시그너스"];
+  const remakeday = ["2022-01-27", ""];
 
   return (
     <div>
