@@ -14,6 +14,7 @@ import Jobs from "./page/Jobs";
 import Weapon from "./page/Weapon";
 import Murng from "./page/Murng";
 import Skills from "./page/Skills";
+import Event from "./page/Event";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           element={<LinkAndUnion />}
         />
         <Route exact path="/MapleStroy-info/Symbol" element={<Symbol />} />
+        <Route exact path="/MapleStroy-info/Event" element={<Event />} />
       </Routes>
     </div>
   );
