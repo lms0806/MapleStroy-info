@@ -15,6 +15,7 @@ const Video = () => {
     "https://youtu.be/d5MnogZ2U5Y",
     "https://youtu.be/EgwnMrx8rRI",
     "https://youtu.be/Yw73WDgBUd0",
+    "https://youtu.be/dMppKJ9eIIc",
   ];
   const titles = [
     "별빛 심포니 온라인 콘서트",
@@ -28,6 +29,7 @@ const Video = () => {
     "메이플 용사의 로그오프 라이프 | 블랙핑크 지수 편 - EP.02",
     "팡이vs글자 메린이 육성대전 1화 | 메이플스토리",
     "팡이vs글자 메린이 육성대전 2화 | 메이플스토리",
+    "메이플스토리 개발진이 용사님들께 쓰는 편지 | 2022 MapleStory",
   ];
   return (
     <div>
