@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MapleStroy-info/static/css/main.647078a0.css",
-    "main.js": "/MapleStroy-info/static/js/main.5bf0b472.js",
+    "main.js": "/MapleStroy-info/static/js/main.44416005.js",
     "static/media/eventbox.png": "/MapleStroy-info/static/media/eventbox.6f2b4daf54486673966d.png",
     "static/media/character.png": "/MapleStroy-info/static/media/character.30b05da183fcf4c948b7.png",
     "static/media/character2.png": "/MapleStroy-info/static/media/character2.9ac1ed099690eba07f67.png",
     "static/media/character3.png": "/MapleStroy-info/static/media/character3.459fcb30356f3e4c5908.png",
     "index.html": "/MapleStroy-info/index.html",
     "main.647078a0.css.map": "/MapleStroy-info/static/css/main.647078a0.css.map",
-    "main.5bf0b472.js.map": "/MapleStroy-info/static/js/main.5bf0b472.js.map"
+    "main.44416005.js.map": "/MapleStroy-info/static/js/main.44416005.js.map"
   },
   "entrypoints": [
     "static/css/main.647078a0.css",
-    "static/js/main.5bf0b472.js"
+    "static/js/main.44416005.js"
   ]
 }
