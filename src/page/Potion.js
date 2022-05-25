@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Table } from "react-bootstrap";
+import { Card, Tab, Table, Tabs } from "react-bootstrap";
 
 const Potion = () => {
   const limit = [
@@ -63,46 +63,94 @@ const Potion = () => {
     0.004, 0.004, 0.004, 0.003, 0.003, 0.001, 0.001, 0.001, 0.001, 0.001,
   ];
 
+  const Potionbestlevel = ["200 ~ 210", "211 ~ 222", "223 ~ 234", "235 ~"];
+  const Potionbestkind = [
+    "성장의 비약 (209렙) 8개",
+    "성장의 비약 (219렙) 4개",
+    "성장의 비약 (229렙) 2개",
+    "태풍 성장의 비약",
+  ];
   return (
     <div>
-      <Card>
-        <Card.Img variant="top" />
-        <Card.Body>
-          <Card.Title>성장의 비약</Card.Title>
-          <Table striped bordered hover>
-            <thead>
-              <tr>
-                <th>레벨</th>
-                <th>극한 성장의 비약</th>
-                <th>태풍 성장의 비약</th>
-                <th>200 ~ 229 비약</th>
-                <th>200 ~ 219 비약</th>
-                <th>200 ~ 209 비약</th>
-                <th>익스트림 성장의 비약</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Array.from({ length: 100 }).map((_, index) => (
-                <tr>
-                  <td key={index}>{200 + index}</td>
-                  <td key={index}>{index < 50 ? 100 : limit[index - 50]}%</td>
-                  <td key={index}>{index < 40 ? 100 : Typhoon[index - 40]}%</td>
-                  <td key={index}>
-                    {index < 30 ? 100 : extreme3[index - 30]}%
-                  </td>
-                  <td key={index}>
-                    {index < 20 ? 100 : extreme2[index - 20]}%
-                  </td>
-                  <td key={index}>
-                    {index < 10 ? 100 : index > 96 ? 0 : extreme1[index - 10]}%
-                  </td>
-                  <td key={index}>{index > 84 ? 0 : extreme0[index]}%</td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </Card.Body>
-      </Card>
+      <Tabs
+        defaultActiveKey="Potions"
+        id="uncontrolled-tab-example"
+        className="mb-3"
+      >
+        <Tab eventKey="Potions" title="경험치별 비약">
+          <Card>
+            <Card.Img variant="top" />
+            <Card.Body>
+              <Card.Title>성장의 비약</Card.Title>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>레벨</th>
+                    <th>극한 성장의 비약</th>
+                    <th>태풍 성장의 비약</th>
+                    <th>200 ~ 229 비약</th>
+                    <th>200 ~ 219 비약</th>
+                    <th>200 ~ 209 비약</th>
+                    <th>익스트림 성장의 비약</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Array.from({ length: 100 }).map((_, index) => (
+                    <tr>
+                      <td key={index}>{200 + index}</td>
+                      <td key={index}>
+                        {index < 50 ? 100 : limit[index - 50]}%
+                      </td>
+                      <td key={index}>
+                        {index < 40 ? 100 : Typhoon[index - 40]}%
+                      </td>
+                      <td key={index}>
+                        {index < 30 ? 100 : extreme3[index - 30]}%
+                      </td>
+                      <td key={index}>
+                        {index < 20 ? 100 : extreme2[index - 20]}%
+                      </td>
+                      <td key={index}>
+                        {index < 10
+                          ? 100
+                          : index > 96
+                          ? 0
+                          : extreme1[index - 10]}
+                        %
+                      </td>
+                      <td key={index}>{index > 84 ? 0 : extreme0[index]}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+        </Tab>
+        <Tab eventKey="Potionbest" title="비약 효율표">
+          <Card>
+            <Card.Img variant="top" />
+            <Card.Body>
+              <Card.Title>성장의 비약</Card.Title>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>레벨</th>
+                    <th>비약</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Array.from({ length: 4 }).map((_, index) => (
+                    <tr>
+                      <td key={index}> {Potionbestlevel[index]}</td>
+                      <td key={index}> {Potionbestkind[index]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </Card.Body>
+          </Card>
+        </Tab>
+      </Tabs>
     </div>
   );
 };
