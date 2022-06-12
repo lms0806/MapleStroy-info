@@ -20,7 +20,7 @@ const Info = () => {
   ];
 
   const remakejob = ["모험가", "시그너스"];
-  const remakeday = ["2022-01-27", ""];
+  const remakeday = ["2022-01-27", "2022-06-30"];
 
   return (
     <div>
@@ -86,7 +86,7 @@ const Info = () => {
                 </tr>
               </thead>
               <tbody>
-                {Array.from({ length: 1 }).map((_, index) => (
+                {Array.from({ length: remakejob.length }).map((_, index) => (
                   <tr>
                     <td key={index}>{remakejob[index]}</td>
                     <td key={index}>{remakeday[index]}</td>
