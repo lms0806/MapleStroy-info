@@ -17,6 +17,8 @@ const Video = () => {
     "https://youtu.be/Yw73WDgBUd0",
     "https://youtu.be/dMppKJ9eIIc",
     "https://youtu.be/90n8S4vshLU",
+    "https://youtu.be/zkMHkWrAOmg",
+    "https://youtu.be/OfMBtKm4qck",
   ];
   const titles = [
     "별빛 심포니 온라인 콘서트",
@@ -32,6 +34,8 @@ const Video = () => {
     "팡이vs글자 메린이 육성대전 2화 | 메이플스토리",
     "메이플스토리 개발진이 용사님들께 쓰는 편지 | 2022 MapleStory",
     "2022 MAPLE LIVE TALK, 용사님들께 진심이었던 하루 비하인드 | 2022 MapleStory",
+    "MapleStory DESTINY SHOWCASE",
+    "2022 SUMMER - MapleStory IGNITION Showcase",
   ];
   return (
     <div>
