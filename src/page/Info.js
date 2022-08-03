@@ -100,14 +100,18 @@ const Info = () => {
       <br />
       <Card style={{ width: "22rem" }}>
         <Card.Body>
-          <Card.Title>불편한 점</Card.Title>
+          <Card.Title>사이트 정리</Card.Title>
           <Card.Text>
-            1. 룬 쿨타임 중일때 서든미션으로 룬관련 미션이 나옴
+            <a target="_blank" href="http://mapleportal.net">
+              추천 사이트
+            </a>
             <br />
-            2. 파풀라투스 몹 잡을 때 파풀라투스가 발판보다 위에서 잡히면
-            아이템이 발판위로 떨어져 먹기힘들어짐
-            <br />
-            3. 마일리지 꾸러미를 사용할 수 없는데 엘몬에서 계속 드랍되어 습득됨
+            <a
+              target="_blank"
+              href="https://docs.google.com/spreadsheets/d/1Ysag41OeeU6Ol8UkFv2Axn6UF6KIaKdGTTd1m5oHpYA/edit#gid=1397551479"
+            >
+              환산 주스텟
+            </a>
             <br />
           </Card.Text>
         </Card.Body>
