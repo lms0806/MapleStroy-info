@@ -125,7 +125,14 @@ const Symbol = () => {
                               "ko-KR"
                             )}
                       </td>
-                      <td>{"?????????"}</td>
+                      <td key={index}>
+                        {index < 1
+                          ? 0
+                          : (
+                              224500000 +
+                              (index - 1) * 107100000
+                            ).toLocaleString("ko-KR")}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
