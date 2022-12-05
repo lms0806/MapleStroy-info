@@ -15,6 +15,7 @@ import Weapon from "./page/Weapon";
 import Murng from "./page/Murng";
 import Skills from "./page/Skills";
 import Event from "./page/Event";
+import Showcase from "./page/Showcase";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/MapleStroy-info/Hunt" element={<Hunt />} />
         <Route exact path="/MapleStroy-info/Boss" element={<Boss />} />
         <Route exact path="/MapleStroy-info/Video" element={<Video />} />
+        <Route exact path="/MapleStroy-info/Showcase" element={<Showcase />} />
         <Route exact path="/MapleStroy-info/Jobs" element={<Jobs />} />
         <Route exact path="/MapleStroy-info/Weapon" element={<Weapon />} />
         <Route exact path="/MapleStroy-info/Murng" element={<Murng />} />
