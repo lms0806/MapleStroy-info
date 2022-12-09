@@ -47,7 +47,7 @@ const Symbol = () => {
                       </td>
                       <td key={index}>{levelsize[index]}</td>
                       <td key={index}>
-                        {(7070700 + index * 3960000).toLocaleString("ko-KR")}
+                        {(7070000 + index * 3960000).toLocaleString("ko-KR")}
                       </td>
                       <td key={index}>
                         {(10840000 + index * 4620000).toLocaleString("ko-KR")}
