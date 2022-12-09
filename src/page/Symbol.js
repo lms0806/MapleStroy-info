@@ -47,32 +47,16 @@ const Symbol = () => {
                       </td>
                       <td key={index}>{levelsize[index]}</td>
                       <td key={index}>
-                        {index < 1
-                          ? 0
-                          : (11030000 + (index - 1) * 3960000).toLocaleString(
-                              "ko-KR"
-                            )}
+                        {(7070700 + index * 3960000).toLocaleString("ko-KR")}
                       </td>
                       <td key={index}>
-                        {index < 1
-                          ? 0
-                          : (15460000 + (index - 1) * 4620000).toLocaleString(
-                              "ko-KR"
-                            )}
+                        {(10840000 + index * 4620000).toLocaleString("ko-KR")}
                       </td>
                       <td key={index}>
-                        {index < 1
-                          ? 0
-                          : (19890000 + (index - 1) * 5280000).toLocaleString(
-                              "ko-KR"
-                            )}
+                        {(14610000 + index * 5280000).toLocaleString("ko-KR")}
                       </td>
                       <td key={index}>
-                        {index < 1
-                          ? 0
-                          : (23076000 + (index - 1) * 5940000).toLocaleString(
-                              "ko-KR"
-                            )}
+                        {(17136000 + index * 5940000).toLocaleString("ko-KR")}
                       </td>
                     </tr>
                   ))}
