@@ -10,7 +10,7 @@ const Showcase = () => {
     "https://youtu.be/ZJCni-1vD34",
     "https://youtu.be/zkMHkWrAOmg",
     "https://youtu.be/OfMBtKm4qck",
-    "",
+    "https://youtu.be/p_CLiy58K8c",
   ];
   const titles = [
     "메이플스토리 GLORY 티저영상 (2019)",
@@ -19,7 +19,7 @@ const Showcase = () => {
     "[메이플스토리 NEO] 메이플 뉴스",
     "MapleStory DESTINY SHOWCASE",
     "2022 SUMMER - MapleStory IGNITION Showcase",
-    "2022 겨울 쇼케이스",
+    "2022 WINTER SHOWCASE - SAVIOR",
   ];
   return (
     <div>
