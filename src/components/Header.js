@@ -51,6 +51,9 @@ const Header = () => {
             <Link to="/MapleStroy-info/Event" className="nav-link">
               이벤트
             </Link>
+            <Link to="/MapleStroy-info/Cube" className="nav-link">
+              큐브
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

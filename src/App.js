@@ -16,6 +16,7 @@ import Murng from "./page/Murng";
 import Skills from "./page/Skills";
 import Event from "./page/Event";
 import Showcase from "./page/Showcase";
+import Cube from "./page/Cube";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         />
         <Route exact path="/MapleStroy-info/Symbol" element={<Symbol />} />
         <Route exact path="/MapleStroy-info/Event" element={<Event />} />
+        <Route exact path="/MapleStroy-info/Cube" element={<Cube />} />
       </Routes>
     </div>
   );
