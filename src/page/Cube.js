@@ -13,7 +13,8 @@ const Cube = () => {
     console.log(data.count);
     console.log(data.dates);
     fetch(
-      "/openapi/maplestory/v1/cube-use-results?count=" +
+      proxy +
+        "/openapi/maplestory/v1/cube-use-results?count=" +
         data.count +
         "&date=" +
         data.dates,
@@ -40,6 +41,8 @@ const Cube = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const proxy = window.location.hostname === "localhost" ? "" : "/proxy";
 
   return (
     <div>
