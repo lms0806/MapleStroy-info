@@ -7,8 +7,7 @@ const Cube = () => {
     dates: "",
     key: "",
   });
-  const [getdata, setgetData] = useState([]);
-
+  const [getData, setgetData] = useState({});
   const submitData = (e) => {
     e.preventDefault();
     console.log(data.count);
@@ -30,8 +29,8 @@ const Cube = () => {
       .then((res) => {
         console.log(res);
         console.log(res.cube_histories);
-        setgetData(res.cube_histories);
-        console.log(getdata);
+        setgetData(res.cube_histories.reverse());
+        console.log(getData);
       });
   };
 
@@ -92,54 +91,101 @@ const Cube = () => {
                 <th>사용한 아이템 종류</th>
                 <th>사용한 아이템 레벨</th>
                 <th>사용한 아이템</th>
-                <th>사용한 아이템 등급</th>
+                <th>잠재능력 등급</th>
+                <th>에디셔널 등급</th>
                 <th>이전 옵션</th>
                 <th>이후 옵션</th>
               </tr>
             </thead>
             <tbody>
-              {Array.from({ length: getdata.length }).map((_, index) => (
+              {Array.from({ length: getData.length }).map((_, index) => (
                 <tr>
-                  <td key={index}>{index + 1}</td>
-                  <td key={index}>{getdata[index].character_name}</td>
-                  <td key={index}>{getdata[index].create_date}</td>
-                  <td key={index}>{getdata[index].cube_type}</td>
-                  <td key={index}>{getdata[index].item_equip_part}</td>
-                  <td key={index}>{getdata[index].item_level}</td>
-                  <td key={index}>{getdata[index].target_item}</td>
-                  <td key={index}>{getdata[index].potential_option_grade}</td>
                   <td key={index}>
-                    {Array.from({
-                      length: getdata[index].before_potential_options.length,
-                    }).map((_, idx) => (
-                      <ul key={idx}>
-                        {
-                          getdata[getdata.length - index - 1]
-                            .before_potential_options[idx].grade
-                        }
-                        -
-                        {
-                          getdata[getdata.length - index - 1]
-                            .before_potential_options[idx].value
-                        }
-                      </ul>
-                    ))}
+                    {index + 1}
+                    {getData[index].miracle_time_flag ? "★" : ""}
+                  </td>
+                  <td key={index}>{getData[index].character_name}</td>
+                  <td key={index}>{getData[index].create_date}</td>
+                  <td key={index}>{getData[index].cube_type}</td>
+                  <td key={index}>{getData[index].item_equip_part}</td>
+                  <td key={index}>{getData[index].item_level}</td>
+                  <td key={index}>{getData[index].target_item}</td>
+                  <td key={index}>{getData[index].potential_option_grade}</td>
+                  <td key={index}>
+                    {getData[index].additional_potential_option_grade}
                   </td>
                   <td key={index}>
-                    {Array.from({
-                      length: getdata[index].after_potential_options.length,
-                    }).map((_, idx) => (
-                      <ul key={idx}>
-                        {
-                          getdata[getdata.length - index - 1]
-                            .after_potential_options[idx].grade
-                        }
-                        {
-                          getdata[getdata.length - index - 1]
-                            .after_potential_options[idx].value
-                        }
-                      </ul>
-                    ))}
+                    {console.log(
+                      getData[index].before_additional_potential_options.length
+                    )}
+                    {console.log(
+                      "----------------------------------------------"
+                    )}
+                    {console.log(
+                      getData[index].before_potential_options.length
+                    )}
+                    {getData[index].before_potential_options.length === 0
+                      ? Array.from({
+                          length:
+                            getData[index].before_additional_potential_options
+                              .length,
+                        }).map((_, idx) => (
+                          <ul key={idx}>
+                            {"에디셔널 : "}
+                            {
+                              getData[index]
+                                .before_additional_potential_options[idx].grade
+                            }
+                            -
+                            {
+                              getData[index]
+                                .before_additional_potential_options[idx].value
+                            }
+                          </ul>
+                        ))
+                      : Array.from({
+                          length:
+                            getData[index].before_potential_options.length,
+                        }).map((_, idx) => (
+                          <ul key={idx}>
+                            {"잠재능력 : "}
+                            {getData[index].before_potential_options[idx].grade}
+                            -
+                            {getData[index].before_potential_options[idx].value}
+                          </ul>
+                        ))}
+                  </td>
+                  <td key={index}>
+                    {getData[index].after_potential_options.length === 0
+                      ? Array.from({
+                          length:
+                            getData[index].after_additional_potential_options
+                              .length,
+                        }).map((_, idx) => (
+                          <ul key={idx}>
+                            {"에디셔널 : "}
+                            {
+                              getData[index].after_additional_potential_options[
+                                idx
+                              ].grade
+                            }
+                            -
+                            {
+                              getData[index].after_additional_potential_options[
+                                idx
+                              ].value
+                            }
+                          </ul>
+                        ))
+                      : Array.from({
+                          length: getData[index].after_potential_options.length,
+                        }).map((_, idx) => (
+                          <ul key={idx}>
+                            {"잠재능력 : "}
+                            {getData[index].after_potential_options[idx].grade}-
+                            {getData[index].after_potential_options[idx].value}
+                          </ul>
+                        ))}
                   </td>
                 </tr>
               ))}
