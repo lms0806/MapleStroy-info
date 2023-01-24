@@ -21,6 +21,7 @@ const Cube = () => {
         "&date=" +
         data.dates,
       {
+        credentials: "include",
         method: "GET",
         headers: {
           "Content-Type": "application/json; charset=utf-8",
