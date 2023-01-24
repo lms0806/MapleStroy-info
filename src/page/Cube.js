@@ -16,8 +16,7 @@ const Cube = () => {
     console.log(data.dates);
     console.log(PROXY);
     fetch(
-      PROXY +
-        "/openapi/maplestory/v1/cube-use-results?count=" +
+      "https://public.api.nexon.com/openapi/maplestory/v1/cube-use-results?count=" +
         data.count +
         "&date=" +
         data.dates,
