@@ -75,6 +75,8 @@ const Cube = () => {
           </Form.Group>
         </Form.Group>
         <br />
+        <h3>{"Data based on NEXON DEVELOPERS"}</h3>
+        <br />
         <Button variant="dark" type="submit" onClick={submitData}>
           큐브 사용 내역 조회
         </Button>
