@@ -8,12 +8,15 @@ const Cube = () => {
     key: "",
   });
   const [getData, setgetData] = useState({});
+  const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
+
   const submitData = (e) => {
     e.preventDefault();
     console.log(data.count);
     console.log(data.dates);
+    console.log(PROXY);
     fetch(
-      proxy +
+      PROXY +
         "/openapi/maplestory/v1/cube-use-results?count=" +
         data.count +
         "&date=" +
@@ -41,9 +44,6 @@ const Cube = () => {
       [e.target.name]: e.target.value,
     });
   };
-
-  const proxy = window.location.hostname === "localhost" ? "" : "/proxy";
-
   return (
     <div>
       <Form>
